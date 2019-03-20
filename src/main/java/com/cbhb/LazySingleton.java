@@ -2,11 +2,13 @@ package com.cbhb;
 public class LazySingleton {
 	private static  LazySingleton lazySingleton = null;
 
-	private LazySingleton(){}
+	private LazySingleton(){ }
 
 	public static LazySingleton getInstance(){
-		if(lazySingleton == null)
-			lazySingleton = new LazySingleton();
+		if(lazySingleton == null) {
+			lazySingleton = new LazySingleton( );
+			return lazySingleton;
+		}
 		return lazySingleton;
 	}
 }
