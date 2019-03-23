@@ -4,6 +4,11 @@ public class LazySingleton {
 
 	private LazySingleton(){ }
 
+
+	//ly3 ,sddf
+
+	//i'm master
+
 	public static LazySingleton getInstance(){
 		if(lazySingleton == null) {
 			lazySingleton = new LazySingleton( );
